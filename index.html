@@ -27,13 +27,15 @@ header#hd>.container.d-flex.jcb.aic.rel.z-up>h1>a>img^^ul#gnb.d-flex>li.d1li.rel
     <!-- 소메뉴는 긴게 좋아요.  -->
 
     <header id="hd" class="bg-check">
-        <div class="container d-flex jcb aic rel h100">
+        <div class="container d-flex jcb aic h100">
             <h1><a href="">로고</a></h1>
             <!-- gnb 가 진짜 키포인트 구나 ..중요하구나 -->
-            <ul id="gnb" class="d-flex">
+            <ul id="gnb" class="d-flex rel">
+                <!-- 이 자리가 gnb의 before (첫번째 자식, 가짜 )  -->
+                <!-- #gnb ul에 rel을 주면 gnb의:after라는마지막자식은 (형제들은d1li들이겠고.) gnb 너비 만큼 darkgry 될 것이고, #gnb에 position이 없다면, 즉 <ul id=#gnb class="d-flex"> 라면, abs는 그 위에 부모(포지션 나올때까지 조상을 계속찾음) 그 위에 부모인 container까지 가서 drkgry 너비도 거기까지 영향감 -->
                 <li class="rel d1li">
                     <a href="" class="d1a">대메뉴</a>
-                    <ul class="abs d2ul">아아아
+                    <ul class="abs d2ul">
                         <li><a href="">소메뉴들</a></li>
                         <li><a href="">소메뉴들</a></li>
                         <li><a href="">소메뉴들</a></li>
@@ -67,9 +69,11 @@ header#hd>.container.d-flex.jcb.aic.rel.z-up>h1>a>img^^ul#gnb.d-flex>li.d1li.rel
                         <li><a href="">소메뉴들</a></li>
                     </ul>
                 </li>
+                <!-- 이 자리가 gnb의 after (마지막 자식, 가짜 )  -->
 
             </ul>
         </div>
+
     </header>
 
     <!-- 

@@ -9,17 +9,31 @@ li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+
+}
+
 a:hover {
-    color: red;
+    color: white;
 }
 
 .bg-check {
-    background-color: gray;
+    background-color: lightgray;
 }
 
-/* a {
-    text-decoration: none;
-} */
+.d1li:hover>a {
+    color: white;
+}
+
+.d2ul li>a {
+    display: block;
+    text-align: center;
+}
+
+.d2ul a {
+    padding-top: 7px;
+}
 
 /* 공통클래스 세팅 쭉 나열  */
 /* 가상 */
@@ -83,10 +97,14 @@ a:hover {
 .d2ul {
     top: 100%;
     min-width: 110px;
+    max-height: 0;
     height: 0;
     overflow: hidden;
-    transition: 0.7s;
+    transition: 0.5s;
     z-index: 10000;
+    background-color: red;
+
+
 }
 
 .d1a {
@@ -97,11 +115,13 @@ a:hover {
 
 /* 이거 해야 d2ul의 자식메뉴 li들이 나옴. */
 #gnb:hover .d2ul {
-    height: 150px;
+    height: 1000px;
 }
 
+.d1li:hover .d2ul,
 #gnb:hover:after {
-    height: 300px;
+    max-height: 180px;
+    /* height: 180px; 하면 가려지는 이유를 알아야함.*/
 }
 
 /* 동생한테 가거나 내 안의 자식한테는 가도 내 부모나 형한테는 명령 못내려요. 거스르는건 JS가 하는거다. 그래서 JS가 쉽다. */
@@ -111,7 +131,8 @@ a:hover {
     left: 0;
     right: 0;
     top: 100%;
-    /* background-color: red; */
-    height: 150px;
+    background-color: darkgray;
+    height: 0;
+    transition: 0.5s;
     /* 여기까지 하면 뒤로 소메뉴가 가려짐 그래서 z index 씀 */
 }

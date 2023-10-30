@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 쓰지말고 에밋(니퍼라고하시던데뭔말일까?) 쓰세요 -->
+    <script src="./js/jquery.js"></script>
+    <!-- 위에 문법 불러와서 아래 스크립트를 알아듣고 처리해 주는 거예요. -->
+    <script> $(document).ready(function () {
+            $("body").css({
+                "backgroundColor": "yellow",
+                "color": "green",
+                "fontSize": "50px"
+            }).html("<h1>초록색인가?</h1>")
+            // $("body").css("background", "green").css("color", "green") 대신 위에 쓸 수 있겠죠. 향후 js 쓸거니까 대문자형식 습관화들이세요.
+
+            $("h1").click(function () {
+                alert('클릭')
+            })
+        })
+    </script>
+</head>
+<!-- 나중에 리액트 쓸때는 바닐라로 할거고요. jquery 는 웹 기능사일떄 쓰세요. -->
+
+<body>
+
+
+</body>
+
+</html>

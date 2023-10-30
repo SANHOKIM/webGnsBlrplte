@@ -1,0 +1,75 @@
+<script src="./js/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $("body")
+            .css({
+                "backgroundColor": "yellow",
+                "color": "green",
+                "fontSize": "50px"
+            })
+            .html("<h1>초록색인가</h1>")
+
+        $("h1").click(function () {
+            alert('클릭')
+        })
+    })
+
+    $("#gnb").click(function () {
+    })
+
+    $("#gnb li:eq(0)").click(function () {
+    })
+
+    $("#gnb li").eq(0).click(function () {
+
+    })
+
+    $("a img").click(function () {
+    })
+
+    $("#cart").click(function () {
+
+    })
+
+    $("#gnb li").eq(-1).click(function () {
+
+    })
+
+    // 마지막 a를 다 없애줘. 어떻게쓰나요? 
+    // $("#gnb li").eq(1).find("a").eq(-1).click(function () {
+    //     $("html").html(""); 안되네
+    // })
+
+    $("#gnb li").eq(-1).click(function () {
+
+    })
+
+    $("#gnb li").find("a").click(function () {
+
+    })
+
+    $("#gnb li").eq(0).find("a").click(function () {
+
+    })
+
+    $(document).ready(function () {
+        $("h1 a").html("다지워");
+
+
+        $("#gnb > li").eq(1).find(".d1a").html("네이버")
+        $("#gnb > li:eq(2) li:eq(0) a").html("구글")
+        $("a").attr("href", "#none")
+        $("h1 img").attr("src", "logo.jpg")
+        $("h1 img").addClass("on")
+        $("body").css("background", "yellow")
+        $('img[src$=".gif"]').css("display", "none")
+        $("a[href='']").css("display"."none")
+
+    })
+
+
+
+
+
+
+</script>

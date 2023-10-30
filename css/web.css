@@ -14,26 +14,34 @@ a:hover {
 }
 
 .bg-check {
-    background-color: #333;
+    background-color: gray;
 }
 
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
 /* 공통클래스 세팅 쭉 나열  */
 /* 가상 */
 
 /* position팀 */
-.position-rel {
+.rel {
     position: relative;
 }
 
-.position-abs {
+.abs {
     position: absolute;
 }
 
 /* d-flex 팀 */
+.d-flex {
+    display: flex;
+}
+
+/* d-block {
+    display: block;
+} */
+
 .jcb {
     justify-content: space-between;
 }
@@ -55,16 +63,17 @@ a {
     height: 100px;
 }
 
-.h300 {
-    height: 300px;
-}
-
 .h200 {
     height: 200px;
 }
 
+.h300 {
+    height: 300px;
+}
 
 .container {
     width: 1200px;
     margin: 0 auto;
 }
+
+/* 여기까지가 워밍업  */

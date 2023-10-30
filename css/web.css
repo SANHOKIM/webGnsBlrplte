@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.bg-check {
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 공통클래스 세팅 쭉 나열  */
+/* 가상 */
+
+/* position팀 */
+.position-rel {
+    position: relative;
+}
+
+.position-abs {
+    position: absolute;
+}
+
+/* d-flex 팀 */
+.jcb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+/* height 작업 */
+.ofh {
+    overflow: hidden;
+}
+
+.h-0 {
+    height: 0;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
